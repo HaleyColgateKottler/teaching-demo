@@ -1,3 +1,4 @@
+# nolint start
 library(ggplot2)
 library(dplyr)
 library(patchwork)
@@ -15,3 +16,4 @@ for (colname in colnames(df)[colnames(df) %in% c("genus", "vore", "order", "cons
 }
 
 wrap_plots(all.plots, ncol = 2, widths = c(2,1))
+# nolint end
